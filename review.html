@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Flat Pricing Card List Design - Using HTML & CSS</title>
+  <link rel="stylesheet" href="review.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="kk"> 
+            <i class='bx bxs-microphone-alt'></i>
+          </a>
+    
+            <ul class="navlist">
+                <a href="index.html">Home</a>
+                <a href="review.html">Review</a>
+                <a href="#"> Contact us</a>
+            </ul>
+
+        <div class="right-content">
+
+            <a href="login.html" class="nav-btn">Sign In</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+  <section class="main-container">
+    <h3> Overall Review</h3>
+    <div class="card-container">
+      <div class="pricing-card card-01">
+        <div class="card-body">
+            <p> <br><i class='bx bx-group'></i> Friendly: &#11088;&#11088;&#11088;&#11088;&#11088; <br> <br></p>
+          <div class="top-shape"></div>
+          <div class="card-content">
+            <ul>
+                <li class="disabled">Accessible and easy <i class="uil uil-check-circle"></i></li>
+                <li class="disabled">Clear and concise <i class="uil uil-check-circle"></i></li>
+                <li class="disabled">Meet the unique needs <i class="uil uil-check-circle"></i></li>
+                <li class="disabled">Actively seeking feedback <i class="uil uil-check-circle"></i></li>
+              </ul>
+            <button class="buy-btn">Read More</button>
+            
+          </div>
+        </div>
+        <div class="ribbon"></div>
+      </div>
+      <div class="pricing-card card-02">
+        <div class="card-body">
+            <p> <br> <i class='bx bx-desktop'> </i> Updats: &#11088;&#11088;&#11088;&#11088;&#11088; <br><br></p>
+          <div class="top-shape"></div>
+          <div class="card-content">
+            <ul>
+                <li class="disabled">Enjoy seamless access<i class="uil uil-check-circle"></i></li>
+                <li class="disabled">Easily concise information.<i class="uil uil-check-circle"></i></li>
+                <li class="disabled">Get quick assistance <i class="uil uil-check-circle"></i></li>
+                <li class="disabled"> Regular updates  <i class="uil uil-check-circle"></i></li>
+              </ul>
+
+            <button class="buy-btn">Read More</button>
+          </div>
+        </div>
+        <div class="ribbon"></div>
+      </div>
+      <div class="pricing-card card-03">
+        <div class="card-body">
+            <p> <br> <i class='bx bx-lock-alt'> </i> Security: &#11088;&#11088;&#11088;&#11088;&#11088; <br> <br></p>
+          <div class="top-shape"></div>
+          <div class="card-content">
+            <ul>
+                <li class="disabled">Ensure privacy. <i class="uil uil-check-circle"></i></li>
+                <li class="disabled">Data is handled<i class="uil uil-check-circle"></i></li>
+                <li class="disabled">Guides and resources  <i class="uil uil-check-circle"></i></li>
+                <li class="disabled">Respond security threats<i class="uil uil-check-circle"></i></li>
+              </ul>
+            <button class="buy-btn">Read More</button>
+          </div>
+        </div>
+        <div class="ribbon"></div>
+      </div>
+    </div>
+
+
+  </section>
+  <script>
+    let menu = document.querySelector('#menu-icon');
+    let navlist = document.querySelector('.navlist');
+    menu.onclick = () => {
+        menu.classList.toggle('bx-x');
+        navlist.classList.toggle('open');
+    }
+</script>
+  <footer class="footer">
+    <p>© 2024 Example Company. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+      

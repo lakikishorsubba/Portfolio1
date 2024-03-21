@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login speech to text.</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="kk"> 
+            <i class='bx bxs-microphone-alt'></i>
+        </a>
+        
+        <ul class="navlist">
+            <a href="index.html">Home</a>
+            <a href="review.html">Review</a>
+            <a href="#"> Contact us</a>
+        </ul>
+
+        <div class="right-content">
+            <a href="" class="nav-btn">Sign In</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+
+        <div class="title">
+            Login to Speech to Text
+        </div>
+
+        <form action="#">
+            <div class="field">
+                <input type="text" required>
+                <label>Email Address</label>
+            </div>
+
+            <div class="field">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+
+            <div class="content">
+                <div class="checkbox">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Agreed</label>
+                </div>
+                <div class="pass-link">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </div> 
+           <div class="field">
+            <input type="submit" value="Login">
+           </div>
+           
+            
+            <div class="signup-link">
+                Not a member? <a href="#">Signup now</a>
+            </div>
+        </form>
+    </div>
+
+    <div class="home-sci">
+        <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+        <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+        <a href="https://twitter.com/?lang=en"><i class='bx bxl-twitter'></i></a>
+        <a href="https://www.linkedin.com/"><i class='bx bxl-linkedin'></i></a>
+    </div>
+    <script>
+        let menu = document.querySelector('#menu-icon');
+        let navlist = document.querySelector('.navlist');
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navlist.classList.toggle('open');
+        }
+    </script>
+     <script src="script.js"></script>
+</body>
+</html>

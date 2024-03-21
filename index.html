@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    />
+    <title>speech-to-speech</title>
+    <!-- Google Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+</head>
+<body>
+    <header>
+        <a href="#" class="kk"> 
+            <i class='bx bxs-microphone-alt'></i>
+          </a>
+        
+            <ul class="navlist">
+                <a href="index.html">Home</a>
+                <a href="review.html">Review</a>
+                <a href="#"> Contact us</a>
+            </ul>
+
+        <div class="right-content">
+
+            <a href="login.html" class="nav-btn">Sign In</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-text">
+            <h5> 
+                Wellcome to speech to text <span class="aa"> converter	</span>&#128516;</h5>
+            <h1> -Lets <span class="aa">Go</span>   <img class="lux" src="lux.png" alt="lux"></h1>
+            <p> This web is a simple sites which will convert your voice to text.</p>
+            <div class="main-hero">
+                <a href="#" class="btn" id="command-button" >CLICK AND SPEAK</a>
+                <a href="#" class="price"> 
+                    clear| <span> Regular Service</span>
+                </a>
+                <div class="box-container"><div class="box"></div>
+                
+            </div>
+            </div>
+            <br>
+            <span id="message">Your Text:</span>
+        </div>
+        <div class="hero-img">
+            <img src="microphone.png" alt="mike"> <br> <br>
+       </div>
+    </section>
+    <div class="icons">
+        <a href="#"><i class='bx bxl-facebook-square'></i></a>
+        <a href="#"> <i class='bx bxl-youtube'></i></a>
+        <a href="#"> <i class='bx bxl-twitter'></i></a>
+    </div>
+
+    <div class="scroll">
+        <a href="#">
+            <i class='bx bx-sort-a-z'></i>
+            Scroll Down
+        </a>
+    </div>
+    <script>
+        let menu = document.querySelector('#menu-icon');
+        let navlist = document.querySelector('.navlist');
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navlist.classList.toggle('open');
+        }
+    </script>
+    <script src="script.js"></script>
+<footer class="footer">
+    <p>© 2024 Example Company. All rights reserved.</p>
+  </footer>
+</body>
+</html>
